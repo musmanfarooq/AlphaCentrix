@@ -1,0 +1,297 @@
+body.rtl-body{
+  direction: rtl;
+  text-align: right;
+  font-family: var(--main-font-arabic) !important;
+}
+.rtl-body nav ul {
+    margin-right: auto;
+    margin-left: 0;
+    padding: 0;
+}
+@media only screen and (min-width: 991px){
+  .rtl-body nav .nav-item button {
+    padding: 0 0 0 25px;
+  }
+}
+.rtl-body nav .nav-item button {
+  padding: 0 0 0 25px;
+}
+.rtl-body nav .nav-item button i {
+    top: 50%;
+    left: 18px;
+    right: auto;
+    transform: translate(-50%,-50%) rotate(180deg);
+}
+.rtl-body nav .nav-link .iconn.contact-icon i:nth-of-type(2){
+  top: 0;
+  left: 2px;
+  font-size: 8px;
+}
+.rtl-body nav .nav-link .iconn.bank-icon i:nth-of-type(2){
+  top: 5px;
+  left: 1px;
+  font-size: 8px;
+}
+.rtl-body nav .nav-link .iconn.kyc-info-icon i:nth-of-type(2){
+  top: 0;
+  left: 2px;
+  font-size: 8px;
+  transform: translate(-50%,-50%) rotate(90deg);
+}
+.rtl-body nav .menuCollapseBtn {
+    left: auto;
+    right: 260px;
+}
+.rtl-body nav .nav-link .iconn {
+    margin-right: 0;
+    margin-left: 5px;
+}
+.rtl-body .main-div .menu-side .menu-title .btnn{
+  float: left;
+}
+.rtl-body .single-menu-btn .icon-side .iconn {
+  border-width: 0;
+  /* border-right: 5px solid var(--secondary-background); */
+  border-right-width: 5px;
+
+}
+.rtl-body .single-menu-btn .text-side .textt {
+  border-radius: 0;
+  border-width: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    /* border: 3px solid var(--tertiary-background); */
+    border-right-width: 0;
+}
+.rtl-body .single-menu-btn:hover .textt,
+.rtl-body .single-menu-o-item.active .single-menu-btn .textt{
+  /* border: 3px solid var(--secondary-background); */
+  border-width: 3px;
+  border-right-width: 0;
+}
+.rtl-body nav .nav-item .dropdown-menu1 a {
+    padding: 0 40px 0 0;
+}
+.rtl-body .menuCollapseBtn {
+    transform: translate(-45%,-50%);
+}
+.rtl-body .single-menu-btn[aria-expanded='true'],
+.rtl-body .single-menu-btn[aria-expanded='true'] .text-side .textt{
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.rtl-body .single-menu-btn .textt .menu-name {
+    text-align: right;
+}
+.rtl-body .single-menu-btn .textt i {
+    left: 15px;
+    right: auto;
+    /* transform: translate(-50%,-50%) rotate(180deg) !important; */
+}
+.rtl-body .single-menu-btn::before{
+  left: 30px;
+  right: auto;
+}
+.rtl-body .unfilled-form .single-menu-btn::after {
+    left: 44.5px;
+    right: auto;
+}
+.rtl-body .incomplete-form .single-menu-btn::after,
+.rtl-body .filled-form .single-menu-btn::after {
+    left: 44.5px;
+    right: auto;
+}
+.rtl-body .menu-collapsed .single-menu-btn[aria-expanded='true'] .text-side,
+.rtl-body .menu-collapsed .single-menu-btn:hover .text-side{
+  right: 50px;
+  left: auto;
+  border-bottom-right-radius: 0;
+  /* z-index: 4 !important; */
+}
+.rtl-body .single-menu-btn .icon-side .iconn i{
+  left: 55%;
+}
+.rtl-body .single-menu-btn .icon-side .iconn.contact-icon i:nth-of-type(2){
+  right: auto;
+  left: 25%;
+}
+.rtl-body .single-menu-btn .icon-side .iconn.bank-icon i:nth-of-type(2){
+  right: auto;
+  left: 20%;
+}
+.rtl-body .single-menu-btn .icon-side .iconn.kyc-info-icon i:nth-of-type(2){
+  right: auto;
+  left: 25%;
+  transform: translate(-50%,-50%) rotate(90deg);
+}
+
+/* .rtl-body .single-menu-btn .iconn{
+  border-radius: 5px;
+} */
+.rtl-body .menu-collapsed .single-menu-o-item.active .single-menu-btn .iconn,
+.rtl-body .menu-collapsed .single-menu-btn[aria-expanded="true"] .icon-side .iconn{
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.rtl-body .single-menu-btn[aria-expanded='true'] .iconn,
+.rtl-body .single-menu-btn:hover .iconn{
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* .rtl-body .single-menu-btn[aria-expanded='true'] .iconn{
+  border-bottom-right-radius: 5px;
+} */
+.rtl-body .single-menu-item-dropdown {
+    /* padding: 0 50px 0 0; */
+    right: 50px;
+    left: auto;
+}
+
+.rtl-body .single-menu-item-dropdown p{
+text-align: right;
+}
+.rtl-body .form-single-section-title h1 {
+  text-align: right;
+}
+.rtl-body .form-item-simple {
+    text-align: right;
+}
+.rtl-body .form-item-simple .single-checkbox-item {
+    padding:  0 10px 0 25px;
+}
+.rtl-body .form-item-simple .single-checkbox-item label {
+    padding: 0 calc(var(--form-label-font-size) + 2px) 0 0;
+
+}
+.rtl-body .form-item-simple .single-checkbox-item span {
+    right: 0;
+    left: auto;
+}
+.rtl-body .form-item-simple label{
+  padding-right: 0;
+  padding-left: 25px;
+}
+.rtl-body .form-item-animated label{
+  left: auto;
+  right: 15px;
+  text-align: right;
+  padding-right: 0;
+  padding-left: 25px;
+}
+.rtl-body .form-item-animated .info-icon {
+right: auto;
+left: 0;
+}
+.rtl-body .form-item-simple .info-icon{
+  left: 17px;
+  right: auto;
+}
+.rtl-body .form-item-simple .single-radio-item label{
+  padding-left: 0;
+}
+.rtl-body .error-msg p {
+    text-align: right;
+}
+.rtl-body .bootstrap-datetimepicker-widget{
+  direction: rtl;
+}
+.rtl-body .bootstrap-datetimepicker-widget .list-unstyled{
+  margin-right: -40px !important;
+}
+.rtl-body .form-select-item .options-box .single-select-option label div{
+  text-align: right;
+}
+.rtl-body .form-item-simple .single-radio-item span {
+  right: 0;
+  left: auto;
+}
+.rtl-body .form-select-item input+span::after {
+  left: 20px;
+  right: auto;
+}
+.rtl-body .add-more-bank-btn {
+    padding: 5px 0 10px 0!important;
+    left: 20px;
+    right: auto;
+}
+.rtl-body .button-section .prev-btn button{
+  padding: 1px 20px 1px 6px;
+}
+.rtl-body .button-section .save-draft-btn button{
+  padding: 1px 6px 1px 20px;
+}
+.rtl-body .button-section .next-btn button{
+  padding: 1px 6px 1px 20px;
+}
+
+.rtl-body .button-section .next-btn button i{
+  left: 12px;
+  right: auto;
+  transform: translate(-50%,-50%) rotate(180deg);
+}
+.rtl-body .button-section .save-draft-btn button i{
+  left: 17px;
+  right: auto;
+}
+.rtl-body .button-section .prev-btn button i{
+  right: 10px;
+  left: auto;
+  transform: translate(-50%,-50%) rotate(180deg);
+}
+.rtl-body .bank-lists-section .bank-details-row .col{
+  text-align: right;
+}
+.rtl-body .add-more-bank-btn button.plus i {
+    transform: translate(-50%,-50%);
+}
+.rtl-body footer h1{
+  text-align: right;
+}
+
+
+/* sumary page */
+
+.rtl-body .summary-item .mainn.filled-form .info-side h2 span:nth-of-type(1)::before{
+  content:"اكتمال";
+}
+.rtl-body .summary-item .mainn.filled-form .info-side h2 span:nth-of-type(2)::after{
+  right: 2px;
+  left: auto;
+}
+.rtl-body .summary-item .mainn.unfilled-form .info-side h2 span:nth-of-type(1)::before{
+  content:"لم تبدأ بعد";
+}
+.rtl-body .summary-item .mainn.unfilled-form .info-side h2 span:nth-of-type(2)::after{
+  right: 2px;
+  left: auto;
+}
+.rtl-body .summary-item .mainn.incomplete-form .info-side h2 span:nth-of-type(1)::before{
+  content:"غير مكتمل";
+}
+.rtl-body .summary-item .mainn.incomplete-form .info-side h2 span:nth-of-type(2)::after{
+  right: 4px;
+  left: auto;
+}
+.rtl-body .summary-item .icon-side .iconnn.contact-icon i:nth-of-type(2){
+  right: auto;
+  left: 25%;
+
+}
+.rtl-body .summary-item .icon-side .iconnn.bank-icon i:nth-of-type(2){
+  right: auto;
+  left: 22%;
+}
+.rtl-body .summary-item .icon-side .iconnn.kyc-info-icon i:nth-of-type(2){
+  right: auto;
+  left: 25%;
+  transform: translate(-50%,-50%) rotate(90deg);
+}
+.rtl-body .new-btn-icon{
+  width: 16px;
+  height: 16px;
+  margin-right: 0px;
+  margin-left: 5px;
+}

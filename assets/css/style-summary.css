@@ -1,0 +1,175 @@
+
+.summary-page-side form{
+  padding: 50px 50px 20px 50px ;
+
+}
+.summary-page-side .title h1{
+  color: var(--summary-icon-background);
+  /* font-family: "Lato"; */
+  font-weight: 700;
+  font-size: calc(var(--form-section-title-font-size) + 3px);
+  margin-bottom: 30px;
+}
+.summary-item .mainn{
+padding-right: 20px;
+margin-bottom: 20px !important;
+}
+.summary-item-row{
+  border-bottom: 1px solid #cccccc;
+
+  margin-bottom: 20px !important;
+}
+/* .summary-page-side .summary-item-row:nth-last-of-type(1){
+  border-bottom: 0;
+
+} */
+/* .summary-page-side .row:nth-last-of-type(1) .col-lg-6:nth-last-of-type(1) .summary-item, */
+/* .summary-page-side .row:nth-last-of-type(1) .col-lg-6 .summary-item{
+  border-bottom: 0;
+} */
+.summary-item .icon-side{
+  max-width: 70px;
+}
+/* .summary-item .icon-side .iconn{
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  position: relative;
+} */
+.summary-item .icon-side .iconnn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--summary-icon-border-color);
+  background: var(--summary-icon-background);
+  position: relative;
+}
+/* .summary-item .icon-side .iconnn img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.9) ;
+} */
+.summary-item .icon-side .iconnn i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--summary-icon-color);
+}
+.summary-item .icon-side .iconnn.contact-icon i:nth-of-type(2){
+  top: 25%;
+  right: 2%;
+  left: auto;
+  font-size: 11px;
+}
+.summary-item .icon-side .iconnn.bank-icon i:nth-of-type(2){
+  top: 40%;
+  right: 0;
+  left: auto;
+  font-size: 11px;
+}
+.summary-item .icon-side .iconnn.kyc-info-icon i:nth-of-type(2){
+  top: 30%;
+  right: 0;
+  left: auto;
+  font-size: 12px;
+}
+/* .summary-item .mainn .info-side a{
+  color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 13px;
+} */
+.summary-item .mainn.filled-form .info-side a{
+  display: none;
+}
+.summary-item .mainn .info-side h2 span{
+  position: relative;
+}
+.summary-item .mainn .info-side h2 span:nth-of-type(2)::after{
+  position: absolute;
+  font-weight: 700;
+  bottom: 4px;
+
+  font-family: "Font Awesome 5 Free";
+  font-size: var(--form-label-font-size);
+}
+.summary-item .mainn.filled-form .info-side h2 span:nth-of-type(1)::before{
+  content:"Complete";
+}
+.summary-item .mainn.filled-form .info-side h2 span:nth-of-type(2)::after{
+  left: 2px;
+  content: "\f00c";
+  color: var(--filled-color-summary);
+}
+.summary-item .mainn.unfilled-form .info-side h2 span:nth-of-type(1)::before{
+  content:"Not started yet";
+}
+.summary-item .mainn.unfilled-form .info-side h2 span:nth-of-type(2)::after{
+  left: 2px;
+  content: "\f00d";
+  color: var(--unfilled-color-summary);
+}
+.summary-item .mainn.incomplete-form .info-side h2 span:nth-of-type(1)::before{
+  content:"Incomplete";
+}
+.summary-item .mainn.incomplete-form .info-side h2 span:nth-of-type(2)::after{
+  left: 2px;
+  content: "\f12a";
+  color: var(--incomplete-color-summary);
+}
+
+.summary-item .info-side h2{
+  font-size: calc(var(--form-label-font-size) + 3px);
+  /* font-family: "Lato"; */
+  font-weight: 500;
+  color: var(--form-text-color);
+}
+
+.submit-btn button{
+  width: 120px;
+  height: 34px;
+  border-radius: 7px;
+  filter: drop-shadow(0 0 69.5px rgba(0,0,0,1));
+  background: var(--form-btn-background);
+  color: var(--form-btn-text-color);
+  border: 2px solid var(--form-btn-border-color);
+  font-size: 15px;
+  line-height: 32px;
+  font-weight: 600;
+  /* filter: drop-shadow(0px 2px 1px rgba(146,146,146,0.75)); */
+  margin: auto;
+  display: block;
+  transition-duration: 0.4s;
+}
+.submit-btn button:hover{
+  background: var(--form-btn-hover-background);
+  color:var(--form-btn-hover-text-color);
+  border-color: var(--form-btn-hover-border-color);
+  /* letter-spacing: 0.4px; */
+  transition-duration: 0.5s;
+  /* filter: drop-shadow(0px 3px 5px rgba(146,146,146,0.75)); */
+}
+@media only screen and (max-width: 991px){
+  .summary-item-row{
+    border-bottom: 0;
+
+    margin-bottom: 0 !important;
+  }
+  .summary-item{
+    border-bottom: 1px solid #cccccc;
+
+    margin-bottom: 20px !important;
+  }
+  /* .summary-page-side .summary-item-row:nth-last-of-type(1) .summary-item:nth-last-of-type(1){
+    border-bottom: 0;
+  } */
+}
+
+@media only screen and (max-width: 576px){
+  .summary-page-side form {
+    padding: 10px 10px 0 10px;
+  }
+}

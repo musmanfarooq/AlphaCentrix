@@ -1,0 +1,120 @@
+.form-select-item{
+  /* display: flex;
+  flex-direction: column; */
+}
+.form-select-item .options-box input[type="radio"]{
+  display: none;
+}
+
+.form-select-item input+span::after{
+  content: "\f107";
+ font-family: "Font Awesome 5 Free";
+font-size: calc(var(--form-label-font-size) + 2px);
+font-weight: 700;
+
+ color: #000;
+
+ position: absolute;
+ top: 32px;
+ right: 20px;
+
+}
+.form-select-item input[aria-expanded="true"]+span::after{
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.form-select-item .options-box{
+  background-color: #fff;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  width: calc(100% - 28px);
+border-bottom: 5px solid var(--secondary-color);
+ position: absolute;
+ visibility: visible;
+ z-index: 9999;
+}
+.form-select-item .options-box-2{
+  width: calc(100% - 5px);
+  max-height: 200px;
+  overflow-y: scroll;
+  border-radius: 5px;
+
+  scrollbar-color:var(--secondary-color) white !important;
+scrollbar-width: thin;
+}
+
+.form-select-item .options-box.active{
+  display: block;
+}
+.form-select-item .options-box .single-select-option label{
+
+}
+.form-select-item .options-box .single-select-option input:checked + label,
+.form-select-item .options-box .single-select-option:hover{
+  background-color: #eee;
+  transition-duration: 0.5s;
+}
+.form-select-item .options-box-2::-webkit-scrollbar{
+  width: 5px;
+  border-radius: 5px;
+  z-index: 2;
+  position: absolute;
+  background-color:transparent;
+}
+.form-select-item .options-box-2::-webkit-scrollbar-thumb{
+  width: 5px;
+border-radius: 5px 5px;
+background-color: var(--secondary-color) !important;
+z-index: 2;
+position: absolute;
+}
+.form-select-item .options-box-2::-webkit-scrollbar-track {
+
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.form-select-item .options-box .single-select-option input:checked + label,
+.form-select-item .options-box .single-select-option:hover label{
+  /* color: var(--secondary-text-color); */
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  transition-duration: 0.5s;
+}
+.form-select-item .options-box .single-select-option label:hover{
+  cursor: pointer;
+
+}
+.form-select-item .options-box .single-select-option label {
+  padding: 12px;
+  line-height: calc(var(--form-label-font-size) + var(--form-label-font-size) + 10px);
+  font-size: var(--form-label-font-size);
+color: #274052;
+margin-bottom: 0;
+padding:  0 10px;
+max-height: calc(var(--form-label-font-size) + var(--form-label-font-size) + 11px);
+overflow: hidden;
+}
+.form-select-item .options-box .single-select-option label div{
+  border-bottom: 1px solid var(--secondary-color);
+  width: 100%;
+  padding: 0 0 0 5px;
+  max-height: calc(var(--menu-text-font-size) * 3 + 1 );
+  overflow: hidden;
+}
+.form-select-item .options-box .single-select-option:nth-last-of-type(1) label div{
+  border-bottom: 0;
+}
+.form-select-item .options-box .single-select-search{
+  width: 100%;
+  /* height: 60px; */
+  padding: 5px 10px;
+  background: #eee;
+}
+.form-select-item .options-box .single-select-search input{
+  width: 100%;
+  margin: auto;
+  height: 35px;
+  padding: 0 5px;
+  border: 1px solid #071a29;
+}

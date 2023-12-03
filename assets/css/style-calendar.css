@@ -1,0 +1,184 @@
+
+ .calendar-converter{
+	 position: absolute !important;
+	 z-index: 10 !important;
+ }
+ .calendar-converter div{
+	 margin: none;
+	 padding: none;
+ }
+.calendar {
+	font-size: 14px;
+	width: 280px;
+	cursor: default;
+	/* background: #eef; */
+	/* background: -webkit-linear-gradient(#eff,#fef,#ffe);
+	background: -moz-linear-gradient(#eff,#fef,#ffe);
+	background: -o-linear-gradient(#eff,#fef,#ffe);
+	background: linear-gradient(#eff,#fef,#ffe); */
+	/* -moz-box-shadow: 0 4px 8px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 4px 8px rgba(0,0,0,.5); */
+	box-shadow: 0 4px 8px rgba(0,0,0,.2);
+	border-radius: 10px;
+	overflow: hidden;
+}
+.calendar .header-button,
+.calendar .setting-button,
+.calendar .weekday-row div,
+.calendar .date-grid div {
+	display: inline-block;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+}
+.calendar .weekday-row div,
+.calendar .date-grid div {
+	vertical-align: middle;
+}
+.calendar .header-row *,
+.calendar .setting-button,
+.calendar .date-grid .normal-date {
+	cursor: pointer;
+}
+.calendar .header-row{
+	padding: 0 30px;
+	text-align: center;
+}
+.calendar .header-row,
+.calendar .month-field,
+.calendar .year-field {
+	color: var(--left-menu-text-color);
+	background: var(--main-background-color);
+}
+.weekday-row{
+	background-color: var(--left-menu-text-color);
+}
+.calendar .setting-row {
+	color: #fff;
+	background: #2b7;
+}
+.calendar .header-button:active,
+.calendar .header-button.active:active {
+	color: #259;
+	background: #ccf;
+}
+.calendar .header-button.active {
+	color: #fff;
+	background: #47b;
+}
+.calendar .setting-button:active,
+.calendar .setting-button.active:active {
+	color: #2b7;
+	background: #cfc;
+}
+.calendar .setting-button.active {
+	color: #fff;
+	background: #4d9;
+}
+.calendar .setting-button.disabled {
+	color: #777;
+	background: #1a6;
+	pointer-events: none;
+}
+.calendar .month-field,
+.calendar .year-field {
+	border: 0;
+	outline: 0;
+	padding: 0;
+	font-family: "Lato";
+	font-size: 14px;
+	text-align: center;
+	text-align-last: center;
+}
+.calendar .month-field {
+	width: 96px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	overflow: hidden;
+	display: inline-block;
+}
+.calendar .month-field::-ms-expand {
+	display: none;
+}
+.calendar .year-field {
+	width: 40px;
+	display: inline-block;
+}
+.calendar .header-button {
+	width: 16px;
+	display: inline-block;
+	font-size: 20px;
+}
+.calendar .header-button:nth-last-of-type(1){
+	display: none;
+}
+.calendar .setting-button {
+	width: 40px;
+}
+.calendar .weekday-row div,
+.calendar .date-grid .excluded-date {
+	width: 40px;
+}
+.calendar .date-grid .normal-date {
+	width: 30px;
+	height: 24px;
+	line-height: 24px;
+	margin: 3px 5px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+.calendar .date-grid .normal-date:hover{
+	background-color: var(--left-menu-text-color);
+	color: #fff;
+	transition-duration: 0.5s;
+}
+.calendar .date-grid{
+	background-color: white;
+}
+.calendar .normal-date {
+	color: #555;
+}
+.calendar .friday-date {
+	color: #292;
+}
+.calendar .sunday-date {
+	color: #c22;
+}
+.calendar .date-grid .excluded-date {
+	font-size: .9em;
+	color: #aaa;
+}
+.calendar .date-grid .normal-date:active {
+	color: #fff;
+	background: #939;
+	-moz-box-shadow: 0 0 1px #000;
+	-webkit-box-shadow: 0 0 1px #000;
+	box-shadow: 0 0 1px #000;
+}
+.calendar .date-grid .current-date,
+.calendar .date-grid .specialz-date,
+.calendar .date-grid .selected-date {
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.5);
+	box-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+.calendar .date-grid .current-date {
+	color: #fff;
+	background: var(--left-menu-text-color);
+}
+.calendar .date-grid .specialz-date {
+	color: #fff;
+	background: #2b7;
+}
+.calendar .date-grid .selected-date {
+	color: var(--left-menu-text-color);
+	background: var(--left-menu-btn-background);
+}
+.gregorion-calendar.calendar-converter .calendar:nth-of-type(2){
+  display: none !important;
+}
+.hijri-calendar.calendar-converter .calendar:nth-of-type(1){
+  display: none !important;
+}

@@ -1,0 +1,125 @@
+@font-face {
+    font-family: CustomFont;
+    font-weight: 100;
+    src:url("../fonts/Lato/Lato-Thin.ttf");
+}
+@font-face {
+    font-family: CustomFont;
+    font-weight: 300;
+    src:url("../fonts/Lato/Lato-Light.ttf");
+}
+@font-face {
+    font-family: CustomFont;
+    font-weight: 400;
+    src:url("../fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+    font-family: CustomFont;
+    font-weight: 700;
+    src:url("../fonts/Lato/Lato-Bold.ttf");
+}
+@font-face {
+    font-family: CustomFont;
+    font-weight: 900;
+    src:url("../fonts/Lato/Lato-Black.ttf");
+}
+
+*{
+  --main-font-english: "CustomFont", serif;
+  --main-font-arabic: "CustomFont", serif;
+
+  --primary-color: rgba(39, 65, 83,1);
+  --secondary-color: #025d7b;
+  --tertiary-color: #0c2335;
+  --quaternary-color: #cacaca;
+
+  /* navabr */
+  --nav-font-size: 13px;
+  --nav-link-color: var(--quaternary-color);
+
+  /* signout btn */
+  --nav-btn-background: var(--primary-color);
+  --nav-btn-border-color: var(--secondary-color);
+  --nav-btn-text-color: var(--nav-link-color);
+  /* signout btn hover  */
+  --nav-btn-hover-background: var(--secondary-color);
+  --nav-btn-hover-border-color: var(--secondary-color);
+  --nav-btn-hover-text-color: var(--nav-link-color);
+
+/* header */
+  --header-shadow:drop-shadow(0 0 69.5px rgba(0,0,0,0.4));
+  --header-background: var(--primary-color);
+
+  /* footer */
+  --footer-shadow:drop-shadow(0 0 69.5px rgba(0,0,0,0.4));
+  --footer-background: var(--primary-color);
+
+  /* main body */
+  --body-background: var(--primary-color);
+
+  /* status colors  */
+  --filled-color: rgba(24, 255, 0,0.8);
+  --filled-color-summary: rgba(24, 255, 0,0.8);
+  --incomplete-color:rgba(255, 222, 0,0.8);
+  --incomplete-color-summary:rgba(255, 222, 0,1);
+  --unfilled-color: #f77f82;
+  --unfilled-color-summary: #f77f82;
+
+  /* menu side color variables  */
+  --menu-text-background: var(--tertiary-color);
+  --menu-text-border-color: transparent;
+  --menu-text-color: var(--quaternary-color);
+  --menu-text-hover-background: var(--tertiary-color);
+  --menu-text-hover-border-color: var(--secondary-color);
+  --menu-text-hover-color: var(--quaternary-color);
+  --menu-text-font-size: 17px;
+
+  --menu-height: 50px;
+  --menu-icon-background: var(--secondary-color);
+  --menu-icon-left-border-color: var(--secondary-color);
+  --menu-icon-color: var(--quaternary-color);
+  --menu-icon-hover-background: var(--secondary-color);
+  --menu-icon-hover-left-border-color: var(--quaternary-color);
+  --menu-icon-hover-color: var(--quaternary-color);
+  --menu-icon-font-size: 25px;
+
+  --menu-dropdown-background: var(--tertiary-color);
+  --menu-dropdown-active-background: var(--secondary-color);
+  --menu-dropdown-active-text-color: var(--quaternary-color);
+
+
+  /* form btn variables */
+  --form-background: white;
+  --form-btn-background: var(--primary-color);
+  --form-btn-border-color:var(--secondary-color);
+  --form-btn-text-color:var(--quaternary-color);
+  --form-btn-hover-background : var(--secondary-color);
+  --form-btn-hover-text-color : var(--quaternary-color);
+  --form-btn-hover-border-color: transparent;
+
+  --form-section-title-font-size: 17px;
+  --form-label-font-size: 13px;
+
+  --form-text-color: var(--primary-color);
+
+  --form-error-msg-color: red;
+  --form-error-msg-font-size: 10px;
+
+  --form-icon-color: var(--primary-color);
+  --form-icon-hover-color:var(--secondary-color);
+
+  --form-hr-rule-color:var(--secondary-color);
+
+  --summary-icon-color: var(--quaternary-color);
+  --summary-icon-background: var(--secondary-color);
+  --summary-icon-border-color:var(--primary-color);
+
+  /* these colors should be in rgb separated by comma */
+  /* form navigation btns */
+  --next-btn-background-color: 39, 65, 83;
+  --save-draft-btn-background-color:227,148,40;
+  --previous-btn-background-color: 127,153,15;
+
+/* checkboxes and radio btns */
+  --radio-btns-color: var(--secondary-color);
+}
